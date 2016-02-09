@@ -1,0 +1,200 @@
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Akshit Tyagi} & \textbf{Ph. No: +918527505197} \\
+Sophomore Undergrad Electrical Engineering & akshit.ee114@ee.iitd.ac.in \\
+Indian Institute of Technology, Delhi & akshitt795@gmail.com\\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item \ressubheading{Indian Institute of Technology, Delhi}{New Delhi, India}{B.Tech. in Electrical Engineering, CGPA: 9.293}{2014 - 2018 (expected) }
+
+\item \ressubheading{Delhi Public School, R.K. Puram, Std. XII}{New Delhi, India}{Graduated with a 97.0 aggregate percentage}{Graduated in 2014}
+
+
+\item \ressubheading{Delhi Public School, R.K. Puram, Std. X}{New Delhi, India}{CGPA: 10.0}{Graduated in 2012}
+
+
+\end{itemize}
+
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item 
+\ressubheading{Winter Software Engineering Intern}{Dealsnprice.com, Gurgaon,India}{Deep Learning and Image Search Team}{Nov.- Dec. 2015}
+\begin{itemize}
+\item Worked on Deep Learning Algorithms involving implementation and optimization of Convolution Neural Network algorithms to optimize image search and object detection for an e-commerce website. It included working on machine learning algorithms to extract features from images and then classifying those images via Support Vector Machines and Bag of SIFT-words classifier. All of this was packaged into an Android app and will be released publicly soon.
+
+\end{itemize}
+
+\end{itemize}
+
+
+
+\resheading{Projects undertaken}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+\ressubheading{Automated Renting and Vending Machine}{IIT Delhi}{Design Innovation Summer Award (DISA) under Prof. M. Balakrishnan}{May-July 2015}
+\begin{itemize}
+\item Prototyped a product which can rent out umbrellas and accept them back. The user authentication was done using credentials verification on and Android application.
+\item Implemented image processing for detecting the change(s) in the umbrella before it was vended out. Changes included any kind of a damage to the product(Say some handle damage or the tarpaulin tear). This enabled us to build a verification system to detect if any damage has been done to the product. 
+\item Image Processing was carried out using NumPy, OpenCV and MatPlotLib on the \newline Raspberry Pi. The use of RaspPi made the product more compact and portable.     
+\end{itemize}
+
+\item
+\ressubheading{Hangman game for the visually impaired}{NSS, IIT Delhi}{Independent Project}{February-May 2015}
+
+\begin{itemize}
+\item Built a Hangman based game for Android devices with support for devices with API version greater than 17.
+\item The game used swipe gestures and TextToSpeech Google Engine to interact with the visually impaired, thus enabling a new class of people to use the Android  applications. 
+\item Implemented the TTS(Text-to-Speech) Engine for the conversion of messages to speech for a richer gaming experience. 
+\end{itemize}
+
+\clearpage
+
+\item
+\ressubheading{Learning Management System for Schools}{HackX, IIT Delhi}{Independent Project}{August 2015}
+
+\begin{itemize}
+\item Designed a web application for schools where parents, students and teachers can login and manage their respective roles w.r.t. the school system. 
+\item Implemented a chat interface and a mailing service with the FireChat and FireBase web server. MySQL was used for the backend database management and JavaScript for the backend logic of the WebPage. HTML5 and CSS were used for the frontend developement.  
+\end{itemize}
+
+\item
+\ressubheading{A Small Search Engine using Inverted Page Index}{COL106(Course), IIT Delhi}{Course Assignment under Assoc. Prof. Amitabha Bagchi}{October 2015}
+
+\begin{itemize}
+\item Made a small Search Engine that can return a list of most relevant queries for word(s)(phrases,AND,OR statements can be handled) using HashTable lookup in an InvertedIndex for a set of pages. The data storage included implementation of AVL Trees for faster lookups for phrase queries. Code can be found at  https://github.com/akshittyagi/SmallSearchEngine
+\end{itemize}
+
+
+
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards, Grants \& Honours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+ {Design \& Innovation Summer Award(DISA)} & \textsc{IIT Delhi,2015}  \\
+\emph{Project Idea was selected to be completed and prototyped under the DIS Award} \\[7pt]
+ 
+ {Institute Award for being a student in the top 7\% in the first year} & \textsc{IIT Delhi,2014-2015} \\[7pt]
+ 
+
+
+
+ {National Talent Search Examination 2010}  & \textsc{NCERT, July 2010} \\
+\emph{Awarded the Scholarship} \\[7pt]
+ {KVPY Fellowship 2012-13} & \textsc{DST,2013} \\
+\emph{Awarded the Fellowship} \\[7pt]
+ {Indian National Chemistry Olympiad 2014} & \textsc{HBCSE,February 2014} \\
+\emph{finished in top 50 students nationally}\\[7pt]
+ 
+ {Junior Science Talent Search Examination 2011}  & \textsc{Govt. of Delhi,July 2011} \\
+\emph{Awarded the Scholarship, stood 2\textsuperscript{nd} in state}\\[7pt]
+
+
+\end{tabular*}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Relevant Courses Taken}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabbing}
+ Signals and Systems \hspace{3.0cm}\= Digital Logic and Circuits* \hspace{3.0cm}\=  Machine Learning*\\
+Data Structure and Algorithms \> Course in Analysis of Algorithms in Java \> Physical Electronics \\
+Probability and Stochastic Processes*\ \> Linear Algebra and Differential Equations\> \>Calculus\> 
+\end{tabbing}
+
+*Courses to be taken in the Spring Semester of 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\resheading{Designing and Programming Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
+{\bf Extensive}
+& \textsc{C++, Java, MATLAB, Bash(Linux Shell)}\\[2pt]
+{\bf Intermediate}
+& \textsc{Python, JavaScript, XML, C, Android Studio}\\[2pt]
+{\bf Basic}
+& \textsc{CSS, HTML5} \\[-5pt]
+\end{tabular*}
+
+
+
+
+
+
+
+
+
+\end{document}
