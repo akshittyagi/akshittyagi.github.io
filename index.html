@@ -64,7 +64,7 @@ Click here for my <a href="http://github.com/akshittyagi">GitHub</a> profile.
       
 
 <li><h4> WordVector Based Moderation Pipeline for Amazon Marketplace </h4>
-We developed an end-to-end pipeline for scoring the risk factor of a specific advertisment campaign on the Amazon Marketplace. This uses the text description of the ad and the associated photograph.
+We developed an end-to-end distributed pipeline for scoring the risk factor of a specific advertisment campaign on the Amazon Marketplace. This uses the text description of the ad and the associated photograph.
 Using these two, we developed a feature extractor to encode the risk of the advertisement and then use an ensemble of regressors to give the majority score of the advertisment. This was used in conjunction with the manual moderation team to make it
 more efficient for them to score only those ads on which our pipeline wasn't confident enough.
 </li>
@@ -75,6 +75,14 @@ The created bot uses Minimax to search over all the possible set of game states,
 </li>
 <br>
 
+<li> <h4>Using Genetic Algorithms for approximately solving the Travelling Salesman Problem</h4>
+  A specific tour of the travelling salesman was modelled as a gene for the Genetic Algorithm(GA). This gene was then mutated using two different crossover techniques: CX and PMX; and both the types of offsprings were included in the final population for the next generation.
+  Fitness of a gene was the Laplace smoothened reciprocal of the total distance of the tour. The crossover process was parallelised thus allowing for very large starting populations and also made the GA approach the maxima in a small number of iterations.
+  For more on the algorithm and the code go <a href="https://github.com/akshittyagi/tsp">here</a>.
+</li>
+  <br>
+  
+
 <li> <h4>Local Search Algorithms with Parallelization</h4>
 Implemented a set of Local Search algorithms including: HillClimibingWithRandomRestarts, HillClimbingwithTabu, BeamSearch,
 BeamSearchWithTabu and BeamSearchWithRandomRestarts. This is used to search for the global maxima for the cost of a resource allocation problem. Parallelization was done to introduce three threads to update a common max value, to make searching more time efficient. The code can be found <a href="https://github.com/akshittyagi/TowerAllocationusingAI">here</a>
@@ -82,7 +90,7 @@ BeamSearchWithTabu and BeamSearchWithRandomRestarts. This is used to search for 
 <br>
 
 <li> <h4>Echo State Networks for Stock Prediction</h4>
-We have used an Echo State Network for predicting stock prices over a given testing period. The code for the ESN can be found <a href="https://github.com/akshittyagi/StockPred">here</a>
+We use an Echo State Network or a reservoir RNN for capturing the movement of a specific stock. The echo state network takes in the input as the stock price of the previous day, the learned state of the echo state network and outputs the predicted value of the index on the current day. The code for the ESN can be found <a href="https://github.com/akshittyagi/StockPred">here</a>
 </li>
 
 	</ol>
