@@ -60,17 +60,19 @@ We developed an end-to-end pipeline for scoring the risk factor of a specific ad
 Using these two, we developed a feature extractor to encode the risk of the advertisement and then use an ensemble of regressors to give the majority score of the advertisment. This was used in conjunction with the manual moderation team to make it
 more efficient for them to score only those ads on which our pipeline wasn't confident enough.
 </li>
+<br>
 
 <li><h4> Minimax Bot for playing the game of <a href="http://cheapass.com/tak/">Tak</a></h4>
 The created bot uses Minimax to search over all the possible set of game states, and selects the best ones using a utility function. The utility function has been trained by seeing which features affect the quality of gameplay the most. The code and a description of the strategy used can be found <a href="https://github.com/akshittyagi/TakBot">here</a>
 </li>
 <br>
-<li> <h4>Local Search Algorithms with Parallelization</h4>
 
+<li> <h4>Local Search Algorithms with Parallelization</h4>
 Implemented a set of Local Search algorithms including: HillClimibingWithRandomRestarts, HillClimbingwithTabu, BeamSearch,
 BeamSearchWithTabu and BeamSearchWithRandomRestarts. This is used to search for the global maxima for the cost of a resource allocation problem. Parallelization was done to introduce three threads to update a common max value, to make searching more time efficient. The code can be found <a href="https://github.com/akshittyagi/TowerAllocationusingAI">here</a>
 </li>
 <br>
+
 <li> <h4>Echo State Networks for Stock Prediction</h4>
 We have used an Echo State Network for predicting stock prices over a given testing period. The code for the ESN can be found <a href="https://github.com/akshittyagi/StockPred">here</a>
 </li>
