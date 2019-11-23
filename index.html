@@ -43,7 +43,7 @@
 <p> I am interested broadly in the field of Theoretical Machine Learning and NLP and have worked in projects involving computer vision, natural language processing and reinforcement learning. Some of my research areas are:
 	<ul>
 		<li>Bayesian Calibration in the learning of neural networks</li>
-		<li>Causual inference for medical diagnosis on multi-modal data
+		<li>Causal inference for medical diagnosis on multi-modal data
 		<li>Natural Language Understanding for smart assistants like Alexa
 	</ul>
 
@@ -60,9 +60,23 @@
 <h2>Major Projects and Internships</h2>
 
 <ol>
+<li><h4>Faster Bayesian Parameter estimation for Neural nets</h4>
+   Currently working on making the process of MCMC sampling for bayesian parameter estimation quicker. Starting off from the work of <a href="https://arxiv.org/abs/1506.04416">bayesian dark knowledge</a>, we want to come up with estimators more robust to dataset uncertainty, while keeping the inference time for the estimation process to be the same or better.
+	</li>
+<br>
+	
+<li><h4>Causal Inference models for multi-model Medical Diagnosis data</h4>
+   Currently working on building hierarchical bayesian diagnostic models for <a href="https://mimic.physionet.org">MIMIC dataset</a>. We are working formalizing the problem as a causal inference problem and investigating the advantages such a formulation can have.
+	</li>
+<br>	
+	
+<li><h4>Building models for Noisy Conversational Question Answering</h4>
+   Worked with Alexa's Implicit Memory team on finding out the best way to integrate noise robustness in text based Q&A models using transformers and ELMo embeddings. We add noise to  the <a href="https://stanfordnlp.github.io/coqa/">CoQA</a> dataset, creating a noisy version of CoQA. Evaluating models like <a href="https://arxiv.org/abs/1810.06683">FlowQA</a> on noisy-CoQA exposes the problems with modern text based NLP models to structured noise coming through speech recognition and ambient noise sources. We use stabilization of layers to get noise robust embeddings for models and are continuing the work to build in robustness for such models.
+	</li>
+<br>	
 
 <li><h4>Natural Language Understanding through Intent Classification</h4>
-    Worked with Alexa's Spoken Language Understandin gteam on building a fast intent classifier. This will be integrated with the voice assistant as a tool to identify the intent 
+    Worked with Alexa's Spoken Language Understanding team on building a fast intent classifier. This will be integrated with the voice assistant as a tool to identify the intent 
     of the utterance spoken by the user in a dialogue form. We were able to build in an early exiting strategy, that can be integrated with LSTMs and affine neural networks, traditionally used for such tasks. We are able to show that much shallower networks are able to perform reasonably well on the task, while being significantly faster and smaller in the number of parameters. Currently under submission at ICASSP '20.
 	</li>
 <br>
@@ -138,6 +152,8 @@ We use an Echo State Network or a reservoir RNN for capturing the movement of a 
   <li>Fall Semester 2017- Undergrad TA for ELL311: Communication Engineering</li>
   <li>Spring Semester 2018- Undergrad TA for MTL106: Probability and Stochastic Processes</li>
   <li>Spring Semester 2019- Grad TA for CS683: Artifical Intelligence</li>
+	
+	<li>Fall Semester 2019- Grad TA for CS589: Machine Learning</li>
 
 </ul>
       </section>
